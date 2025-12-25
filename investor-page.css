@@ -774,9 +774,16 @@ html,body{
     }
     .option .container{
        height: auto;
-       /* width: 100%;  */
+       width: 100%; 
        display: flex;
+       flex-direction: column;
+       /* background-color: red; */
+       padding: 10px 0;
        
+    }
+    .container .option-text{
+        width: 100%;
+        text-align: center;
     }
     
 }
