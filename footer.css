@@ -61,7 +61,7 @@ html,body{
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
 i{
-    font-size: 37px;
+    font-size: 36px;
     padding: 0;
 }
 
@@ -88,8 +88,8 @@ i{
 }
 
 .logo-part .logo-img{
-    height:100px;
-    width: 100px;
+    /* height:100px; */
+    width: 90px;
     border-radius: 5cm;
 }
 .logo-img img{
@@ -267,7 +267,7 @@ li a{
         flex-wrap: wrap;
         justify-content:start;
         gap: 10px;
-        padding: 50px 50px;
+        /* padding: 50px 50px; */
         
     }
     .footer-part2 .logo-part{
@@ -276,9 +276,6 @@ li a{
         display: flex;
         flex-direction: column;
         align-items: start;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
         padding-bottom: 40px;
         
     }
