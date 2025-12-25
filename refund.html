@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Refund Policy | The Tradification</title>
+    <link rel="stylesheet" href="privacy.css">
+    <link rel="stylesheet" href="icon.css">
+</head>
+
+<body>
+
+    
+<div id="preloader">
+  <img src="public/images/preloader.gif" alt="Loading..." />
+</div>
+
+      <div id="header-container"></div>
+
+
+    <section class="privacy-hero">
+        <div class="container">
+            <h1>Refund Policy</h1>
+            <p>Understand how refunds work on our platform</p>
+        </div>
+    </section>
+
+    <section class="privacy-content container">
+        <p>Welcome to The Tradification Refund Policy page. Please read these terms carefully before requesting a refund.</p>
+
+        <h3>1. Refund Eligibility</h3>
+        <ul>
+            <li>Refund requests must be made within 3 days of purchase.</li>
+            <li>Refunds apply only if course content has not been accessed or less than 20% viewed.</li>
+            <li>Webinar registrations are non-refundable if sessions have already started.</li>
+        </ul>
+
+        <h3>2. Refund Request Process</h3>
+        <p>To request a refund, contact our support team with:</p>
+        <ul>
+            <li>Order details</li>
+            <li>Reason for refund</li>
+        </ul>
+
+        <h3>3. Refund Method</h3>
+        <p>Approved refunds will be processed back to the original payment method within 7–10 business days.</p>
+
+        <h3>4. Chargebacks</h3>
+        <p>Unauthorized chargebacks may result in account suspension or legal action.</p>
+
+        <h3>5. Changes to Policy</h3>
+        <p>The Tradification reserves the right to modify refund terms at any time. Updated terms will be posted on this page.</p>
+
+        <h3>Contact Us</h3>
+        <p>If you have any questions or want to request help:</p>
+        <p><strong>Email:</strong> support@thetradification.com</p>
+        <p><strong>Phone:</strong> +91 6268491275</p>
+        <p><strong>Address:</strong> 403, SS ENCLAVE UMARIYA, MHOW</p>
+
+    </section>
+
+      <section id="footer"></section>
+      <div class="floating-icons">
+
+  <a href="https://wa.me/916268491275" target="_blank" class="whatsapp-btn">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+
+  <button id="scrollTopBtn" class="scroll-top-btn">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+</div>
+<script src="script.js"></script>
+      <script>
+         fetch("header.html").then(r=>r.text()).then(d=>{
+    document.getElementById("header").innerHTML=d;
+    });
+        fetch("footer.html").then(r=>r.text()).then(d=>{
+    document.getElementById("footer").innerHTML=d;
+    });
+      function goLogin(){
+      location.assign("login.html");
+      
+}
+
+      function openMenu(){
+  document.querySelector('.mobile-menu')?.classList.add('show');
+  document.querySelector('.overlay')?.classList.add('show');
+}
+
+   function closeMenu(){
+       document.querySelector('.mobile-menu')?.classList.remove('show');
+       document.querySelector('.overlay')?.classList.remove('show');
+}
+
+
+      </script>
+
+
+</body>
+
+</html>

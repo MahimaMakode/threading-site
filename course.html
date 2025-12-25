@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Courses | The Tradification</title>
+  <link rel="stylesheet" href="course.css">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+       <link rel="stylesheet" href="icon.css">
+</head>
+<body>
+
+  
+<div id="preloader">
+  <img src="public/images/preloader.gif" alt="Loading..." />
+</div>
+   <div id="header-container"></div>
+
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Course</h1>
+    <p><span>Home</span> > Course</p>
+  </div>
+</section>
+
+<section class="filter">
+  <button class="active" onclick="filterCourses('all',this)">All</button>
+  <button onclick="filterCourses('trading',this)">Trading</button>
+</section>
+
+<section class="courses">
+  <div class="card ">
+   <!-- <h1>hello</h1> -->
+  </div>
+
+  <div class="card trading">
+   <!-- <h2>trading</h2> -->
+  </div>
+
+  <div class="card other">
+   
+  </div>
+</section>
+  <section id="footer"></section>
+<div class="floating-icons">
+
+  <a href="https://wa.me/916268491275" target="_blank" class="whatsapp-btn">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+
+  <button id="scrollTopBtn" class="scroll-top-btn">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+</div>
+
+<script src="script.js"></script>
+   <script>
+     fetch("header.html").then(r=>r.text()).then(d=>{
+    document.getElementById("header").innerHTML=d;
+    });
+        fetch("footer.html").then(r=>r.text()).then(d=>{
+    document.getElementById("footer").innerHTML=d;
+    });
+      function goLogin(){
+      location.assign("login.html");
+}
+
+    function filterCourses(type, btn) {
+        
+        document.querySelectorAll('.filter button')
+            .forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const cards = document.querySelectorAll('.card');
+
+      
+        cards.forEach(card => {
+            card.classList.add('hide');
+            card.classList.remove('show');
+        });
+
+      
+        setTimeout(() => {
+            cards.forEach(card => {
+                if (type === 'all' || card.classList.contains(type)) {
+                    card.style.display = 'block';
+                    card.classList.remove('hide');
+                    card.classList.add('show');
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }, 300);
+    }
+
+          function openMenu(){
+  document.querySelector('.mobile-menu')?.classList.add('show');
+  document.querySelector('.overlay')?.classList.add('show');
+}
+
+   function closeMenu(){
+       document.querySelector('.mobile-menu')?.classList.remove('show');
+       document.querySelector('.overlay')?.classList.remove('show');
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    width: 100%;
+    background: #f4f6f8;
+    color: #1f2937;
+}
+
+
+
+.privacy-hero {
+    background: linear-gradient(135deg, #00a884, #0f766e);
+    color: #ffffff;
+    text-align: center;
+    padding: 90px 15px;
+}
+
+.privacy-hero h1 {
+    font-size: 42px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+}
+
+.privacy-hero p {
+    font-size: 18px;
+    margin-top: 8px;
+    opacity: 0.9;
+}
+
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 16px;
+}
+
+
+.privacy-content {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 46px;
+    box-shadow: 0 16px 35px rgba(0,0,0,0.06);
+    margin: -60px auto 60px;
+    line-height: 1.9;
+}
+
+.privacy-content p {
+    font-size: 15.8px;
+    color: #4b5563;
+    margin-bottom: 14px;
+}
+
+
+.privacy-content h3 {
+    margin-top: 34px;
+    margin-bottom: 12px;
+    font-size: 21px;
+    font-weight: 600;
+    color: #111827;
+    position: relative;
+}
+
+.privacy-content h3::before {
+    content: '';
+    position: absolute;
+    left: -16px;
+    top: 8px;
+    width: 6px;
+    height: 20px;
+    background: #00a884;
+    border-radius: 4px;
+}
+
+.privacy-content ul {
+    margin-left: 22px;
+    margin-top: 10px;
+}
+
+.privacy-content ul li {
+    font-size: 15.5px;
+    color: #374151;
+    margin-bottom: 9px;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+
+    .privacy-hero h1 {
+        font-size: 30px;
+    }
+
+    .privacy-hero p {
+        font-size: 15px;
+    }
+
+    .privacy-content {
+        padding: 26px;
+        margin-top: -40px;
+    }
+
+    .privacy-content h3 {
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .privacy-hero {
+        padding: 60px 12px;
+    }
+
+    .privacy-hero h1 {
+        font-size: 24px;
+    }
+
+    .privacy-content {
+        padding: 20px;
+        border-radius: 12px;
+    }
+
+    .privacy-content p,
+    .privacy-content ul li {
+        font-size: 14.8px;
+    }
+}

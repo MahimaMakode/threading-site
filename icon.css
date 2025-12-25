@@ -1,0 +1,102 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+.floating-icons{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 9999;
+}
+
+
+.whatsapp-btn{
+    width: 55px;
+    height: 55px;
+    background: #25D366;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    text-decoration: none;
+}
+
+
+.scroll-top-btn{
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background: #00c18c;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+
+/* Preloader */
+#preloader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #ffffff; /* background color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999999;
+}
+
+#preloader img{
+  width: 220px;   /* size adjust */
+  height: auto;
+}
+
+
+
+@media (max-width:991px) {
+.adv ul li p{
+    text-align: justify;
+}
+.contact-info p{
+    text-align: justify;
+}
+}
+@media screen and (max-width: 450px) {
+
+  h1{
+    font-size: 26px !important;
+  }
+
+  h2{
+    width: 100%;
+    /* background-color: red; */
+    font-size: 30px !important;
+  }
+
+  p{
+    font-size: 16px !important;
+  }
+
+}

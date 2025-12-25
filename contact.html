@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us</title>
+<link rel="stylesheet" href="contact.css">
+<!-- <link rel="stylesheet" href="style.css"> -->
+     <link rel="stylesheet" href="icon.css">
+<link rel="stylesheet"
+ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+
+
+<div id="preloader">
+  <img src="public/images/preloader.gif" alt="Loading..." />
+</div>
+
+
+ <div id="header-container"></div>
+
+<section class="contact-section">
+  <div class="contact-grid">
+
+  
+    <div class="contact-form">
+      <h1>Feel free to write</h1>
+
+      <div class="form-grid">
+        <input type="text" placeholder="Enter Name">
+        <input type="email" placeholder="Enter Email">
+        <input type="text" placeholder="Enter Subject">
+        <input type="tel" placeholder="Enter Phone">
+        <textarea placeholder="Enter Message"></textarea>
+      </div>
+
+      <div class="form-buttons">
+        <button class="send-btn">SEND MESSAGE</button>
+        <button class="reset-btn">RESET</button>
+      </div>
+    </div>
+
+
+    <div class="contact-info">
+      <span>NEED ANY HELP?</span>
+      <h2>Get in touch with us</h2>
+      <p>
+        At The Tradification, we're more than just a trading mentorship and
+        financial education platform — we're your long-term partners in mastering
+        the markets with clarity, confidence, and consistency.
+      </p>
+
+      <div class="info-box">
+        <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+        <div>
+          <b>Have any question?</b><br>
+          +91 6268491275
+        </div>
+      </div>
+
+      <div class="info-box">
+        <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+        <div>
+          <b>Write email</b><br>
+          support@thetradification.com
+        </div>
+      </div>
+
+      <div class="info-box">
+        <div class="info-icon"><i class="fa-solid fa-location-arrow"></i></div>
+        <div>
+          <b>Visit anytime</b><br>
+          403, SS ENCLAVE UMARIYA MHOW
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="map-section">
+<iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d7366.827750389285!2d75.789972!3d22.601015!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjLCsDM2JzAzLjciTiA3NcKwNDcnMzMuMiJF!5e0!3m2!1sen!2sin!4v1765987419976!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+
+<section id="footer"></section>
+<div class="floating-icons">
+
+  <a href="https://wa.me/916268491275" target="_blank" class="whatsapp-btn">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+
+  <button id="scrollTopBtn" class="scroll-top-btn">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+</div>
+
+<script src="script.js"></script>
+
+
+    <script>
+
+        fetch("footer.html").then(r=>r.text()).then(d=>{
+    document.getElementById("footer").innerHTML=d;
+    });
+
+
+    
+     
+     
+    function goLogin(){
+      location.assign("login.html");
+}
+
+    function openMenu(){
+  document.querySelector('.mobile-menu')?.classList.add('show');
+  document.querySelector('.overlay')?.classList.add('show');
+}
+
+   function closeMenu(){
+       document.querySelector('.mobile-menu')?.classList.remove('show');
+       document.querySelector('.overlay')?.classList.remove('show');
+}
+
+       
+
+
+    </script>
+
+</body>
+</html>

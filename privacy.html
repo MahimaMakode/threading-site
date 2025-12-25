@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy | The Tradification</title>
+    <link rel="stylesheet" href="privacy.css">
+    <link rel="stylesheet" href="icon.css">
+</head>
+
+<body>
+
+<div id="preloader">
+  <img src="public/images/preloader.gif" alt="Loading..." />
+</div>
+
+      
+      <div id="header-container"></div>
+    <section class="privacy-hero">
+        <div class="container">
+            <h1>Privacy Policy</h1>
+            <p>Your privacy is important to us</p>
+        </div>
+    </section>
+
+    <section class="privacy-content container">
+        <p>This Privacy Policy explains how we collect, use, and protect your personal information when you use our website.</p>
+
+        <h3>1. Information We Collect</h3>
+        <ul>
+            <li>Personal Details like Name, Email, Phone when you register or contact us.</li>
+            <li>Payment Info via secure third-party payment providers.</li>
+            <li>Usage Data like IP address, browser type, pages visited.</li>
+            <li>Communication data if you message us.</li>
+        </ul>
+
+        <h3>2. How We Use Your Information</h3>
+        <ul>
+            <li>To create and manage your account.</li>
+            <li>To deliver content and webinar access.</li>
+            <li>To improve our services and support.</li>
+            <li>To respond to your inquiries.</li>
+            <li>To maintain security and prevent fraud.</li>
+        </ul>
+
+        <h3>3. Sharing Your Information</h3>
+        <p>We do not sell your personal data. We share only with trusted service providers like payment gateways and email tools, or when legally required.</p>
+
+        <h3>4. Data Security</h3>
+        <p>We implement technical measures to safeguard your data from unauthorized access, loss, or misuse.</p>
+
+        <h3>5. Your Rights</h3>
+        <p>You can request access, update, or deletion of your personal data anytime. To exercise your rights, contact us.</p>
+
+        <h3>6. Third-Party Links</h3>
+        <p>Our website may contain third-party links. We are not responsible for their privacy practices.</p>
+
+        <h3>7. Changes to This Policy</h3>
+        <p>This policy may be updated occasionally. Updated details will be posted here.</p>
+
+        <h3>8. Contact Us</h3>
+        <p>If you have questions, contact us at:</p>
+        <p><strong>Email:</strong> support@thetradification.com</p>
+        <p><strong>Phone:</strong> +91 6268491275</p>
+        <p><strong>Address:</strong> 403, SS ENCLAVE UMARIYA, MHOW</p>
+    </section>
+     <section id="footer"></section>
+     <div class="floating-icons">
+
+  <a href="https://wa.me/916268491275" target="_blank" class="whatsapp-btn">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+
+  <button id="scrollTopBtn" class="scroll-top-btn">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+</div>
+     <script src="script.js"></script>
+     <script>
+     fetch("header.html").then(r=>r.text()).then(d=>{
+    document.getElementById("header").innerHTML=d;
+    });
+     fetch("footer.html").then(r => r.text()).then(d => {
+            document.getElementById("footer").innerHTML = d;
+        });
+
+       
+      function goLogin(){
+      location.assign("login.html");
+      }
+            function openMenu(){
+  document.querySelector('.mobile-menu')?.classList.add('show');
+  document.querySelector('.overlay')?.classList.add('show');
+}
+
+   function closeMenu(){
+       document.querySelector('.mobile-menu')?.classList.remove('show');
+       document.querySelector('.overlay')?.classList.remove('show');
+}
+
+
+
+
+
+
+     </script>
+
+
+</body>
+
+</html>

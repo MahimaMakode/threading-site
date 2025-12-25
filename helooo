@@ -1,0 +1,1514 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.trader{
+    height: 100%;
+    width: 100%;
+   
+}
+.trader a img{
+    height: 100%;
+    width: 100%;
+
+}
+
+.about-page{
+    height:auto;
+    width: 100%;
+    background: url(public/images/icon-dotted-map.png);
+    background-repeat: no-repeat;
+    background-position: 25%;
+}
+
+.about-page .about-bg{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+   
+
+}
+.about-bg .trader-image{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+   
+   
+
+}
+.trader-image .trader1{
+    height: 560px;
+    width: 470px;
+   
+    position: absolute;
+    top: 60px;
+    left: 20px;
+
+}
+.trader1  img{
+    height: 100%;
+    width: 100%;
+}
+
+.trader-image .trader2{
+    height: 370px;
+    width: 300px;
+    border-radius: 20px;
+  
+    position: absolute;
+    top: 60px;
+    right: 6%;
+    z-index: 99;
+}
+.trader2  img{
+    height: 100%;
+    width: 100%;
+}
+
+.trader-image .experience{
+    height: 101px;
+    width: 290px;
+    background:url(public/images/experience-bg.png);
+    position: absolute;
+    top: 560px;
+    left: 350px;
+    z-index: 99;
+     font-size: 22px;
+    font-weight: 700;
+    color: white;
+    padding: 0px 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 60px 0px 30px;
+    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.24);
+    animation: experience 10s infinite linear;
+
+
+}
+
+
+.experience .count{
+    font-size: 70px;
+    color: white;
+    font-size: 900;
+   
+}
+
+@keyframes experience {
+    0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+     }
+    50% {
+    -webkit-transform: translateY(-25px);
+    transform: translateY(-25px);
+     }
+    100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    }
+    
+}
+.trader-image .arrow1{
+    height: 300px;
+    width: 100px;
+   
+    position: absolute;
+    top: 420px;
+    left: 0%;
+    z-index: -9999999999;
+
+}
+.trader-image .arrow2{
+    height: 300px;
+    width: 100px;
+   
+    position: absolute;
+    top: 420px;
+    right: 25%;
+    z-index: -9999999999;
+
+}
+
+
+.about-bg .trader-detail{
+    height: auto;
+    width: 45%;
+    padding-bottom: 50px;
+}
+.trader-detail .heading{
+    height:auto;
+    width: 100%;
+  
+    padding: 90px 40px 20px 0px ;
+
+   
+}
+.trader-detail .section-text{
+    height: 100%;
+    width: 70%;
+    margin-top: 30px;
+}
+.section-text p{
+    color: #7d8185;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: justify;
+}
+
+.trader-detail .value{
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+   
+
+}
+.value li{
+    height: 80px;
+    width:250px;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+   
+
+}
+.value li i{
+    height: 50px;
+    width: 50px;
+    border-radius: 5cm;
+    padding: 15px;
+    font-weight: 900;
+    margin-right: 10px;
+    
+}
+.value .third{
+    background-color: #EF5C72;
+}
+.value .second{
+    background-color: #04b388;
+}
+.value .first{
+    background-color: #7054E6;
+}
+.trader-detail .btn-box{
+    margin-top: 30px;
+}
+
+.value li:hover{
+    i{
+    transform: rotateY(360deg);
+    transition: 1s all ease;
+    }
+}
+
+.btn-box  .btn-style-one{
+    font-size: 12px;
+    line-height: 24px;
+    padding: 15px 60px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    overflow: hidden;
+    text-transform: uppercase;
+    color: white;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+    background-color:black;
+    border-radius: 50px;
+    text-decoration: none;
+  
+}
+
+.row{
+    width: 100%;
+    height:auto;
+    background-color: white;
+    padding: 100px 0px;
+
+}
+
+.row .inner-row{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+
+}
+.inner-row .inner{
+    height: 150px;
+    width: 250px;
+    border-radius: 15px;
+    background-color: white;
+     box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+     padding: 20px 25px;
+         transition: transform 0.3s ease;
+
+
+}
+.inner:hover{
+    transform: translateY(-10px);
+
+
+    .class{
+        background-color: black;
+      
+    }
+
+    .student{
+        color: white;
+    }
+}
+.inner .text-num{
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+
+}
+.text-num:first-child{
+    color: #04b388;
+}
+.inner .one{
+    color: #7054E6;
+}
+
+.inner .two{
+    color:#EF5C72;
+}
+
+.inner .class{
+    width:200px;
+    height: 38px;
+    background-color: #F1F5F7;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding-top: 10px;
+
+}
+
+.class .student{
+    font-size: 12px;
+    color: #7d8185;
+    text-transform: uppercase;
+    font-weight: 500;
+    
+}
+
+.webinar{
+    height: auto;
+    width: 100%;
+    background-color: white;
+}
+
+.webinar .part1{
+    height: 50%;
+    width: 100%;
+    background: url(public/images/pattern-1.png) repeat-y center; 
+    padding: 100px 0px 170px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    background-color: rgba(190, 183, 183, 0.159);
+   
+  
+
+
+}
+.part1 .heading{
+    text-align: center;
+}
+.part1 .heading h4{
+    font-size: 16px;
+    font-weight: 700;
+    color: #04b388;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+.heading h2{
+    font-size: 50px;
+    font-weight: 700;
+    color: #191e24;
+    line-height: 1.2em;
+
+}
+
+
+.part2{
+    height: 50%;
+    width: 100%;
+    background-color: white;
+    padding-bottom: 500px;
+    padding-left: 100px;
+    position: relative;
+    
+   
+}
+
+.part2 .webinar-box{
+    height: 500px;
+    width: 370px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 7px 0px rgba(0,0,0,0.08) ;
+    position: absolute;
+    top: -20%;
+    left: 14%;
+    z-index: 9999;
+   
+    
+}
+
+ .price-box{
+  position: absolute;
+  top: 10%;
+  right: 0%;
+  display: inline-flex;
+  
+  align-items: center;
+  gap: 6px;
+  padding: 8px 4px;
+  background: #e94b86;   /* pink bar */
+  border-radius: 20px 0px 0px 20px;
+  color: #fff;
+  overflow: hidden;
+}
+
+
+.old-price{
+  text-decoration: line-through;
+  opacity: 0.6;
+  font-size: 15px;
+}
+
+.new-price{
+  font-size: 15px;
+  font-weight: bold;
+}
+
+
+.webinar-box .webinar-img{
+    height: 40%;
+    width: 100%;
+    border-top-left-radius:10px ;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+    position: relative;
+}
+
+
+.webinar-img img{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border-top-left-radius:10px ;
+    border-top-right-radius: 10px;
+   
+}
+
+
+.webinar-box .content-box{
+    width: 100%;
+    height: 70%;
+    padding: 0px 20px;
+
+}
+.content-box ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    color: #7d8185;
+    padding: 20px 0px 15px;
+}
+.content-box ul li i{
+    color: #04b388;
+    margin-right: 8px;
+
+}
+
+.content-box h5 a{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2em;
+    color:#191e24;
+    text-decoration: none;
+  
+    
+   
+}
+.content-box h5 a:hover{
+        color: #ef5c72;
+}
+.content-box p{
+    margin-top: 15px;
+}
+
+.content-box p a{
+    
+    font-size: 18px;
+    color: #7d8185;
+    text-align: justify;
+    line-height: 1.7em;
+   
+
+}
+.content-box p a:hover{
+    color: #ef5c72;
+    text-decoration: underline;
+}
+
+.tour-page{
+    width: 100%;
+    height:70%;
+    background-image: url(public/images/bull\ image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* padding: 120px 100px; */
+    position: relative;
+}
+
+.tour-page .tour-bg{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.66);
+}
+.tour-page .video{
+    height: 60%;
+    width: 80%;
+    /* background-color: gray; */
+    display: flex;
+    /* gap: 20px; */
+    justify-content: space-between;
+    position: absolute;
+    top: 23%;
+    left: 10%;
+   
+}
+.video .tittle-box{
+    width: 50%;
+    height: auto;
+    text-align: justify;
+}
+.tittle-box h2{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.2em;
+    margin-bottom: 50px;
+    color: white;
+    text-align: justify;
+    word-spacing:normal;
+}
+
+.tittle-box .btn-style{
+    font-size: 12px;
+    line-height: 24px;
+    padding: 15px 60px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    overflow: hidden;
+    text-transform: uppercase;
+    color: white;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+    background-color: #7054e6;
+    border-radius: 50px;
+    text-decoration: none;
+}
+.video .video-box{
+    height: 100%;
+    width: 40%;
+    background-color: lightseagreen;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    
+}
+
+.video-box span{
+    height: 100%;
+    width: 60%;
+    margin-top: 38%;
+
+   
+
+}
+.video-play a{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    background-color:#ef5c72;
+    text-align: center;
+    padding: 40px;
+    margin-top: -20%;
+    margin-right: 25px;
+    transition: all 500ms ease;
+   
+    
+   
+}
+i{
+        color:white;
+    }
+
+.video-box a:hover{
+    background-color: white;
+    
+}  
+.video-box i:hover{
+    color:#ef5c72;
+}  
+.video .video-box .play-btn i:after {
+    position: absolute;
+    /* left: -25px; */
+    right: 0%;
+    top: 10px;
+    height: 150px;
+    width: 150px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    content: "";
+    /* -webkit-animation: zoom-one 2s infinite linear;
+    animation: zoom-one 2s infinite linear; */
+}
+
+.video-box .video-play{
+    height: 300px;
+    width: 300px;
+   
+   
+}
+
+
+.why-choose-us{
+    height: auto;
+    width: 100%;
+    background-image: url(public/images/icon-dotted-map-2.png);
+    background-repeat: initial;
+    background-position: top;
+    background-size: contain;
+    padding-bottom: 100px;
+    
+}
+
+.why-choose-us .heading{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding: 100px  0px 30px ;
+    /* background-color:pink; */
+
+   
+}
+
+.heading .section-head{
+    height: 100%;
+    width: 40%;
+}
+
+.section-head h4{
+    font-size: 16px;
+    font-weight: 700;
+    color: #04b388;
+    margin-bottom: 20px;
+}
+.section-head h2{
+    font-size: 50px;
+    font-weight: 700;
+    color: #191e24;
+    line-height: 1.2em;
+}
+
+.why-choose-us .section-text{
+    height: 100%;
+    width: 420px;
+}
+.section-text p{
+    color: #7d8185;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: start;
+    
+}
+
+.why-choose-us .option{
+    height:auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+
+    
+    
+}
+
+.option .box{
+    height: 11rem;
+    width: 34rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+     box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+   
+
+}
+
+.box:hover {
+  transform: translateY(-6px);
+}
+
+.box .image-box{
+    height: 130px;
+    width: 130px;
+    border-radius: 5cm;
+
+
+}
+.image-box :hover {
+    border-radius: 0px 65px 0px 65px;
+    
+    
+    
+    
+}
+.image-box img{
+    height: 100%;
+    width: 100%;
+    border-radius: 5cm;
+}
+
+.box .option-text{
+    height: 100%;
+    width: 60%;
+   /* background-color: red; */
+   padding: 30px 20px;
+   background: url(public/images/icon-event.png);
+    background-position: right;
+   background-repeat: no-repeat;
+  
+    
+}
+
+.option-text a{
+    text-decoration: none;
+    color: #191e24;
+    font-size: 20px;
+    font-weight: 700;
+  
+}
+
+.option-text a:hover{
+    color: #04b388;
+}
+
+.option-text p{
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+    line-height: 30px;
+    padding: 10px 35px 0px 0px;
+   
+    
+}
+
+.testomonial{
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+.testim {
+    position: relative;
+    padding: 60px 15px;
+    overflow: hidden;
+}
+.testim::before{
+    position: absolute;
+    content: "";
+    width: 50%;
+    left: 0%;
+    top: 0;
+    height: 100%;
+    z-index: -1;
+    background-color: #7054e6;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.testim-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.testim h2 {
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.2em;
+    letter-spacing: -0.04em;
+}
+
+.add-testimonial-btn {
+    background-color: #ffffff;
+    border: 2px solid #6F53E5;
+    padding: 10px 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    color: #6F53E5;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.text-p{
+    color: black;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+
+
+
+.testim::after {
+    position: absolute;
+    content: "";
+    width: 50%;
+    top: 0;
+     right: 0;
+    background-color: #04B388;
+    height: 100%;
+    z-index: -1;
+}
+
+.testim-wrapper{
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.testim-content{
+    width: fit-content;
+    display: flex;
+    gap: 1.5rem;
+
+    animation: scroll 25s linear;
+
+}
+.testim-content:hover{
+  animation-play-state:paused;
+}
+@keyframes scroll{
+  0%{
+    transform:translateX(0);
+  }
+  100%{
+    transform:translateX(-50%);
+  }
+}
+
+.testim-box{
+    width:300px;
+    padding: 40px 10px;
+    box-shadow: 0 0.1rem 0.2rem rgba(0,0,0,0.08),
+                0 0.1rem 0.5rem rgba(0,0,0,0.05),
+                0 0.2rem 1.5rem rgba(0,0,0,0.03);
+
+   border-radius: 15px;
+   display: flex;
+   flex-direction: column;
+   background-color: white;
+
+}
+.testim-box p{
+    width: 100%;
+    /* text-align: ; */
+    font-size: 16px;
+    color: #7d8185;
+    line-height: 1.4;
+    
+    
+   
+}
+
+.testim-box .testim-box-content{
+    width: 100%;
+    
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    align-items: center;
+    margin-top: 30px;
+     
+}
+
+
+.testim-box-content img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+    
+}
+.testim-box-content h3{
+    text-transform: capitalize;
+}
+
+
+.courses{
+    height: auto;
+    width: 100%;
+    background: url(public/images/icon-dotted-map.png) no-repeat left;
+    background-color: white;
+
+}
+.courses .heading{
+    width: 100%;
+    padding: 100px 00px 40px 150px;
+    /* background-color: red; */
+   
+}
+.heading h4{
+    font-size: 16px;
+    font-weight: 700;
+    color: #04b388;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+.courses.heading h2{
+    font-size: 50px;
+    font-weight: 700;
+    color: #191e24;
+    line-height: 1.2em;
+    margin-bottom: 40px;
+    width: 25%;
+
+}
+.courses.heading p{
+    font-size: 18px;
+    width: 25%;
+    color: #7d8185;
+    line-height: 34px;
+      font-weight: 400;
+}
+
+
+.course-content{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 0px 150px  100px;
+    
+}
+
+.course-content .course-content1{
+    width: 47.5%;
+    height: 100%;
+}
+
+.course-content1 p{
+    font-size: 18px;
+    color: #7d8185;
+    line-height: 34px;
+    font-weight: 400;
+}
+
+.course-content1 h2{
+    font-size: 50px;
+    font-weight: 700;
+    color: #191e24;
+    line-height: 1.2em;
+    margin-bottom: 40px;
+
+}
+.course-content .course-content2{
+    width: 45%;
+    height: 100%;
+}
+
+.course-content2 .form{
+    width: 100%;
+    border:2px solid #f1f1f1;
+   
+}
+.form .head {
+    padding: 20px 0px;
+   width: 100%;
+   position: relative;
+   background-color: #7054E6;
+
+}
+
+.form .head h3{
+     color: white;
+     font-size: 24px;
+     padding-left: 50px;
+}
+
+.head::before {
+    position: absolute;
+    left: 55px;
+    top: 100%;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 10px solid #7054E6;
+    content: "";
+    z-index: 1;
+}
+
+.form .input{
+    padding: 60px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.form input{
+    width: 100%;
+    height:70px;
+    padding: 25px 50px;
+    border: none;
+    background-color: #f1f1f1;
+    font-size: 16px;
+    font-weight: 400;
+    outline: none;
+    color: #191e24;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.form input:focus{
+    border-color: #04B388;
+}
+.btn-sub{
+    padding:  0px 30px 50px;
+}
+.btn-sub button{
+    border-radius: 0;
+    padding: 25px 60px;
+    line-height: 26px;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: #f16101;
+    transition: all 500ms ease;
+    text-transform: uppercase;
+    border: none;
+    color: white;
+    cursor: pointer;
+    
+}
+.btn-sub button[type="submit"]:hover {
+  background:#7054E6;
+  transition: all 5ms ease-in;
+}
+
+
+button:active {
+  transform: scale(0.97);
+}
+.testim .modal {
+  display: none;
+ position: fixed; 
+ top: 0%;
+ left: 0%;
+ z-index: 99;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+/* Modal box */
+.modal-content {
+  background: #fff;
+  width: 350px;
+  padding: 20px;
+  border-radius: 10px;
+ position: fixed;
+ 
+  z-index: 9999;
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  right: 12px;
+  top: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  color: black;
+}
+
+.modal-content h2 {
+    color: black;
+  margin-bottom: 15px;
+}
+
+/* Inputs */
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+/* Submit button */
+.modal-content [type="submit"] {
+  width: 100%;
+  background: #7054E6;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.modal-content button[type="submit"]:hover {
+  background:#7054E6;
+}
+
+
+
+
+
+/* responsive */
+
+
+@media (max-width:991px) {
+    .why-choose-us{
+        width: auto;
+        max-width: 100%;
+       
+    }
+  
+}
+
+@media (max-width:768px) {
+    .trader{
+       width: 100%;
+       background-size: contain;
+    }
+     .about-page{
+       padding-bottom: 800px;
+
+    
+        
+        width: 100%;
+       
+     }
+
+    .about-page .about-bg{
+        height: auto;
+        
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0px;
+        padding: 0px 20px;
+
+     }
+
+    .about-bg .trader-detail{
+        height: auto;
+       
+       width: 100%;
+       
+
+    }
+    .trader-detail .heading{
+        width: 100%;
+       
+    }
+    .trader-detail .heading .section-head{
+        width: 100%;
+    }
+    .trader-detail .section-text{
+       height: 100%;
+       width: 100%;
+       margin-top: 30px;
+       line-height: 30px;
+    }
+
+    .trader-detail .value{
+        width: 100%;
+        
+    }
+    .value li{
+        width: 45%;
+    }
+
+    .trader-detail .btn-box{
+        width: 100%;
+      
+       
+    }
+    .btn-box .btn-style-one {
+        padding: 15px 80px;
+       color:white;
+        background-color: lightcoral;
+
+
+    }
+    .btn-box .btn-title{
+        color: white;
+       
+
+    }
+
+    .about-bg .trader-image{
+        width: 100%;
+        height: 100%;
+        position: relative;
+       
+    }
+
+    .row{
+        width: 100%;
+
+    }
+    .row .inner-row{
+        width: 100%;
+       display: flex;
+       flex-wrap: wrap;
+    }
+  
+    .inner .text-num{
+     
+        display: block;
+    }
+    
+    
+    .tour-page{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        
+    }
+    .tour-page .tour-bg{
+        width: 100%;
+        height: 100%;
+    }
+    .tour-bg .video{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 130px;
+        position: absolute;
+        top: 15%;
+        left: 0%;
+        align-items: center;
+        text-align: center;
+    }
+    .video .tittle-box{
+        width: 100%;
+        text-align: center;
+        padding: 0%;
+    }
+    .tittle-box h2{
+        text-align: center;
+    }
+    span{
+        display: none;
+    }
+    .video .video-box .play-btn i:after{
+         position: absolute;
+        left: -25%;
+        top: -25%;
+    }
+    .video-box a{
+        position: absolute;
+        left: 32%;
+        top: 50%;
+      
+    }
+    .why-choose-us{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .why-choose-us .heading{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: start;
+        padding-left: 20px;
+    }
+    .option{
+        width: 100%;
+        flex-direction: column;
+        padding: 0px 20px;
+    }
+    .option .box{
+        width: 100%;
+    }
+
+    .courses{
+        width: 100%;
+    }
+    .courses .heading{
+      padding-left: 4%;
+      padding-bottom: 100px;
+        
+        
+    }
+    .heading h2{
+        width: 100%;
+    }
+    .heading p{
+        width: 100%;
+    }
+    .courses .course-content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0px 20px 80px;
+    }
+    .course-content .course-content1{
+        width: 100%;
+    }
+     .course-content .course-content2{
+        width: 100%;
+    }
+    .modal-content .close {
+        position: absolute;
+        display: block;
+        right: 12px;
+        top: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        background-color: transparent;
+        color: black;
+    }
+}
+
+
+@media (max-width:451px) {
+    .trader{
+        height: 50%;
+        width: 100%;
+        background-position: center;
+        background-size:contain;
+        background-color: white;
+    }
+
+    .about-page{
+        width: 100%;
+        height: auto;
+        padding: 0%;
+    }
+
+    .about-page .about-bg{
+        height: auto;
+        
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0px;
+        padding: 0px 20px;
+
+     }
+
+    .about-bg .trader-detail{
+        height: auto;
+       
+       width: 100%;
+       
+
+    }
+    .trader-detail .heading{
+        width: 100%;
+       
+    }
+    .trader-detail .heading .section-head{
+        width: 100%;
+    }
+    .trader-detail .section-text{
+       height: 100%;
+       width: 100%;
+       margin-top: 30px;
+    }
+
+    .trader-detail .value{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        gap: 10px;
+
+        
+    }
+    .value li{
+        width: 100%;
+    }
+
+    .trader-detail .btn-box{
+        width: 100%;
+       
+    }
+    .btn-box .btn-style-one {
+        padding: 15px 60px;
+        color: white;
+
+    }
+
+    .about-bg .trader-image{
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding-bottom: 1000px;
+        
+       
+    }
+    .trader-image .trader1{
+        height: auto;
+         width: auto;
+        position: absolute;
+        
+    }
+    .trader-image .trader2{
+        height: auto;
+        width: auto;
+        position: absolute;
+        top: 550px;
+        
+    }
+    
+   .trader-image .experience{
+   
+    position: absolute;
+    top: 900px;
+    left: 20px;
+    z-index: 99999;
+    padding: 0px  40px;
+   }
+   .experience .count{
+    color: white;
+    display: block;
+   
+   }
+
+   .row{
+     width: 100%;
+    height:auto;
+   }
+
+   .row .inner-row{
+    width: 100%;
+    padding: 0px 20px;
+    align-items: center;
+
+   }
+
+   .inner-row .inner{
+    width: 100%;
+
+   }
+   .inner .class{
+    width: 100%;
+   }
+
+    .tour-page{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        
+    }
+     .tour-page .tour-bg{
+        width: 100%;
+        height: 100%;
+    }
+    .tour-bg .video{
+        width: 100%;
+        position: relative;
+    }
+    .video .video-box .play-btn i:after{
+         position: absolute;
+        left: -30%;
+        top: -25%;
+    }
+    .video-box a{
+        position: absolute;
+        left: 25%;
+        top: 50%;
+      
+    }
+    .why-choose-us{
+        width: 100%;
+    }
+    .why-choose-us .option{
+        width: 100%;
+    }
+    .option .box{
+       height: auto; 
+ 
+    }
+
+
+    .webinar{
+        width: 100%;
+        overflow: hidden;
+    }
+    .part2{
+        width: 100%;
+        
+       
+        
+    }
+    .part2 .webinar-box{
+        width: 85%;
+        height: min-content;
+        position: absolute;
+        left: 8%;
+    }
+   
+    .content-box p a{
+    
+    text-decoration: none;
+    
+}
+.courses .heading{
+    padding: 50px 20px 50px 20px;
+}
+.courses .heading p{
+    margin-top: 20px;
+}
+
+
+
+    
+}

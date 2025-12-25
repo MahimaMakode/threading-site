@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login | Register</title>
+
+<link rel="stylesheet"
+ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<link rel="stylesheet" href="log-in.css">
+    <link rel="stylesheet" href="icon.css">
+<!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+
+
+  
+<div id="preloader">
+  <img src="public/images/preloader.gif" alt="Loading..." />
+</div>
+    <div id="header-container"></div>
+<section class="sign">
+<div class="container" id="container">
+
+  <div class="tabs">
+    <button class="tab-btn active" onclick="showLogin()">Login</button>
+    <button class="tab-btn" onclick="showRegister()">Register</button>
+  </div>
+
+  <div class="forms">
+
+    <form class="form">
+      <h2>Login</h2>
+
+      <div class="input-box">
+        <input type="email" placeholder="Email">
+      </div>
+
+      <div class="input-box">
+        <input type="password" id="loginPass" placeholder="Password">
+        <i class="fa-solid fa-eye" onclick="togglePass('loginPass',this)"></i>
+      </div>
+
+      <button class="btn">Login</button>
+
+      <div class="text">
+        Don’t have an account?
+        <span onclick="showRegister()">Register</span>
+      </div>
+    </form>
+
+    <form class="form">
+      <h2>Register</h2>
+
+      <div class="input-box">
+        <input type="text" placeholder="Name">
+      </div>
+
+      <div class="input-box">
+        <input type="email" placeholder="Email">
+      </div>
+
+      <div class="input-box">
+        <input type="tel" placeholder="Phone">
+      </div>
+
+      <div class="input-box">
+        <input type="password" id="regPass" placeholder="Password">
+        <i class="fa-solid fa-eye" onclick="togglePass('regPass',this)"></i>
+      </div>
+
+      <button class="btn">Register</button>
+
+      <div class="text">
+        Already have an account?
+        <span onclick="showLogin()">Login</span>
+      </div>
+    </form>
+
+  </div>
+</div>
+</section>
+
+<section id="footer"></section>
+        <div class="floating-icons">
+
+  <a href="https://wa.me/916268491275" target="_blank" class="whatsapp-btn">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+
+  <button id="scrollTopBtn" class="scroll-top-btn">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+</div>
+<script src="script.js"></script>
+<script>
+    // fetch("header.html").then(r=>r.text()).then(d=>{
+    // document.getElementById("header").innerHTML=d;
+    // });
+const container = document.getElementById("container");
+const tabs = document.querySelectorAll(".tab-btn");
+
+function showRegister(){
+  container.classList.add("register");
+  tabs[0].classList.remove("active");
+  tabs[1].classList.add("active");
+}
+
+function showLogin(){
+  container.classList.remove("register");
+  tabs[1].classList.remove("active");
+  tabs[0].classList.add("active");
+}
+
+function togglePass(id,icon){
+  const input = document.getElementById(id);
+  if(input.type==="password"){
+    input.type="text";
+    icon.classList.replace("fa-eye","fa-eye-slash");
+  }else{
+    input.type="password";
+    icon.classList.replace("fa-eye-slash","fa-eye");
+  }
+
+
+}
+      
+       
+
+    function goLogin(){
+      location.assign("login.html");
+}
+ function openMenu(){
+  document.querySelector('.mobile-menu')?.classList.add('show');
+  document.querySelector('.overlay')?.classList.add('show');
+}
+
+   function closeMenu(){
+       document.querySelector('.mobile-menu')?.classList.remove('show');
+       document.querySelector('.overlay')?.classList.remove('show');
+}
+
+        
+        fetch("footer.html").then(r=>r.text()).then(d=>{
+    document.getElementById("footer").innerHTML=d;
+    });
+
+</script>
+
+</body>
+</html>

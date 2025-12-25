@@ -1,0 +1,1234 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.about{
+    height:300px;
+    width: 100%;
+    background: url(public/images/page-title.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;  
+    
+}
+.about .about-dt{
+    padding: 90px 150px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.626);
+   
+}
+
+.about .about-detail{
+    width: 100%;
+    
+}
+
+.about .about-detail h1{
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1em;
+    color: white;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+
+.about .about-detail ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.about .about-detail ul li  .home{
+    color: #04B388;
+}
+
+
+.about-page{
+    height:auto;
+    width: 100%;
+    background: url(public/images/icon-dotted-map.png);
+    background-repeat: no-repeat;
+    background-position: 25%;
+    padding: 30px;
+}
+
+.about-page .about-bg{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+   
+
+}
+.about-bg .trader-image{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 40px;
+   
+}
+.trader-image .trader1{
+    height: 560px;
+    width: 470px;
+   
+    /* position: absolute;
+    top: 100px;
+    left: 20px; */
+
+}
+
+.trader-image .trader2{
+    height: 370px;
+    width: 300px;
+    margin-left: 30px;
+    /* border-radius: 20px; */
+    
+    /* position: absolute;
+    top: 100px;
+    right: 6%;
+    z-index: 99; */
+}
+.trader1 img{
+    height: 100%;
+    width: 100%;
+}
+.trader2 img{
+    height: 100%;
+    width: 100%;
+}
+
+.trader-image .experience{
+    height: 101px;
+    width: 290px;
+    background:url(public/images/experience-bg.png);
+    position: absolute;
+    /* top: 580px; */
+    bottom: 10%;
+    left: 350px;
+    z-index: 99;
+     font-size: 22px;
+    font-weight: 700;
+    color: white;
+    padding: 0px 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 60px 0px 30px;
+    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.24);
+    animation: experience 10s infinite linear;
+    animation: experience 2.5s infinite linear;
+
+
+}
+
+
+.experience .count{
+    font-size: 70px;
+    color: white;
+    font-size: 900;
+   
+}
+
+@keyframes experience {
+    0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+     }
+    50% {
+    -webkit-transform: translateY(-25px);
+    transform: translateY(-25px);
+     }
+    100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    }
+    
+}
+.trader-image .arrow1{
+       height: 300px;
+    width: 100px;
+   
+    position: absolute;
+    /* top: 420px; */
+    bottom: -10%;
+    left: 0%;
+    z-index: -999;
+
+}
+.trader-image .arrow2{
+      height: 300px;
+    width: 100px;
+   
+    position: absolute;
+    /* top: 420px; */
+    bottom: -10%;
+    right: 25%;
+    z-index: -99;
+
+
+}
+
+
+.about-bg .trader-detail{
+    height: auto;
+    width: 45%;
+    padding-bottom: 50px;
+}
+.trader-detail .heading{
+    height:auto;
+    width: 100%;
+  
+    /* padding: 70px 0px 20px 0px ; */
+    padding: 90px 40px 20px 0px ;
+
+
+   
+}
+.heading h4{
+    font-size: 16px;
+    font-weight: 700;
+    color: #04b388;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+.heading h2{
+    font-size: 50px;
+    font-weight: 700;
+    color: #191e24;
+    line-height: 1.2em;
+
+}
+.trader-detail .section-text{
+    height: 100%;
+    width: 70%;
+    margin-top: 30px;
+    
+}
+
+.section-text p{
+    color: #7d8185;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    /* text-align: justify; */
+}
+
+.trader-detail .value{
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+   
+
+}
+.value li{
+    height: 80px;
+    width:250px;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+   
+
+}
+.value li i{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    padding: 15px;
+    font-weight: 900;
+    margin-right: 10px;
+    
+}
+.value .third{
+    background-color: #EF5C72;
+}
+.value .second{
+    background-color: #04b388;
+}
+.value .first{
+    background-color: #7054E6;
+}
+.value i{
+    font-weight: 900;
+    color: white;
+}
+
+
+.certification{
+    height: auto;
+    width: 100%;
+     background: url(public/images/pattern-1.png) repeat-y center; 
+    
+}
+
+.certification .row{
+    height: 100%;
+    width: 100%;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    background-color:#1d047e9f;
+}
+.row .certificate{
+    height: 120px;
+    width: 20%;
+    /* background-color: coral; */
+    display: flex;
+    justify-content: center;
+
+}
+
+.certificate .icon1{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.icon1 img{
+    height: 64px;
+}
+
+.icon1 .title{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+
+}
+
+.mission-page{
+    height: auto;
+    width: 100%;
+
+}
+.mission-page .mission-vission{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: start;
+    gap:5%;
+    padding-bottom: 100px;
+}
+
+.mission-vission .coach{
+    width: 45%;
+    height: 700px;
+    /* background-color: red; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.coach img{
+    height: 100%;
+    width: 100%;
+}
+
+.coach .coach-name{
+    position: absolute;
+    bottom: 10%;
+    left: 25%;
+    border-radius: 0px 50px 0px 50px;
+    padding: 3% 10%;
+    background-color: #fafafa;
+    animation: coach-name 6s infinite alternate-reverse;
+
+}
+
+@keyframes coach-name{
+    0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+     }
+    50% {
+    -webkit-transform: translateX(-25px);
+    transform: translateX(-25px);
+     }
+    100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    }
+    
+}
+
+.goal{
+    width: 50%;
+    height: 100%;
+}
+
+.goal .mission{
+    padding-top: 50px;
+}
+.mission .heading{
+    width: 100%;
+
+}
+.goal .text-section{
+    width: 80%;
+    padding: 30px 45px 30px 0px;
+
+}
+
+.goal .text-section p{
+    font-size: 18px;
+    color: #7d8185;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+
+
+.testomonial{
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+.testim {
+    position: relative;
+    padding: 60px 15px;
+    overflow: hidden;
+}
+.testim::before{
+    position: absolute;
+    content: "";
+    width: 50%;
+    left: 0%;
+    top: 0;
+    height: 100%;
+    z-index: -1;
+    background-color: #7054e6;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.testim-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.testim h2 {
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.2em;
+    letter-spacing: -0.04em;
+}
+
+.add-testimonial-btn {
+    background-color: #ffffff;
+    border: 2px solid #6F53E5;
+    padding: 10px 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    color: #6F53E5;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.text-p{
+    color: black;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+
+
+
+.testim::after {
+    position: absolute;
+    content: "";
+    width: 50%;
+    top: 0;
+     right: 0;
+    background-color: #04B388;
+    height: 100%;
+    z-index: -1;
+}
+
+.testim-wrapper{
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.testim-content{
+    width: fit-content;
+    display: flex;
+    gap: 1.5rem;
+
+    animation: scroll 25s linear;
+
+}
+.testim-content:hover{
+  animation-play-state:paused;
+}
+@keyframes scroll{
+  0%{
+    transform:translateX(0);
+  }
+  100%{
+    transform:translateX(-50%);
+  }
+}
+
+.testim-box{
+    width:300px;
+    padding: 40px 10px;
+    box-shadow: 0 0.1rem 0.2rem rgba(0,0,0,0.08),
+                0 0.1rem 0.5rem rgba(0,0,0,0.05),
+                0 0.2rem 1.5rem rgba(0,0,0,0.03);
+
+   border-radius: 15px;
+   display: flex;
+   flex-direction: column;
+   background-color: white;
+
+}
+.testim-box p{
+    width: 100%;
+    /* text-align: ; */
+    font-size: 16px;
+    color: #7d8185;
+    line-height: 1.4;
+    
+    
+   
+}
+
+.testim-box .testim-box-content{
+    width: 100%;
+    
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    align-items: center;
+    margin-top: 30px;
+     
+}
+
+
+.testim-box-content img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+    
+}
+.testim-box-content h3{
+    text-transform: capitalize;
+}
+
+.testim .modal {
+  display: none;
+ position: fixed; 
+ top: 0%;
+ left: 0%;
+ z-index: 99;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+/* Modal box */
+.modal-content {
+  background: #fff;
+  width: 350px;
+  padding: 20px;
+  border-radius: 10px;
+ position: fixed;
+ 
+  z-index: 9999;
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  right: 12px;
+  top: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  color: black;
+}
+
+.modal-content h2 {
+    color: black;
+  margin-bottom: 15px;
+}
+
+/* Inputs */
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+/* Submit button */
+.modal-content [type="submit"] {
+  width: 100%;
+  background: #7054E6;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.modal-content button[type="submit"]:hover {
+  background:#7054E6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.section-text p{
+    color: #7d8185;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: start;
+    /* background-color: red; */
+    
+}
+
+.why-choose-us .option{
+    height:auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+
+    
+    
+}
+
+.option .box{
+    height: 11rem;
+    width: 34rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+     box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+   
+
+}
+
+.box:hover {
+  transform: translateY(-6px);
+}
+
+.box .image-box img{
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+     transition: border-radius .5s ease-in-out;
+}
+.box .image-box img:hover{
+    border-radius: 0px 65px 0px 65px;   
+}
+
+
+
+
+.image-box img{
+    height: 100%;
+    width: 100%;
+    border-radius: 5cm;
+}
+
+
+
+
+.box .option-text{
+    height: 100%;
+    width: 60%;
+   /* background-color: red; */
+   padding: 30px 20px;
+   background: url(public/images/icon-event.png);
+    background-position: right;
+   background-repeat: no-repeat;
+  
+    
+}
+
+.option-text a{
+    text-decoration: none;
+    color: #191e24;
+    font-size: 20px;
+    font-weight: 700;
+  
+}
+
+.option-text a:hover{
+    color: #04b388;
+}
+
+.option-text p{
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+    line-height: 30px;
+    padding: 10px 35px 0px 0px;
+   
+    
+}
+    .mission-vission .coach{
+        width: 40%;
+        height: 40%;
+        padding: 20px ;
+        /* background-color: red; */
+        background-color: transparent;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+@media (max-width:991px) {
+    .about{
+        padding: auto;
+        width: 100%;
+        height: auto;
+       
+    }
+    .about .about-dt{
+        padding-left: 30px;
+        margin: 0%;
+    }
+     .about .about-dt h1 {
+        font-size: 30px
+    }
+    .why-choose-us{
+        width: auto;
+        max-width: 100%;
+       
+    }
+     .about-page{
+ 
+        width: 100%;
+        /* background-color: red; */
+
+    }
+    .about-bg{
+        width: 100%;
+        
+        display: flex;
+        flex-direction: column-reverse;
+        
+       
+    }
+    .about-bg  .trader-image{
+
+      display: flex;
+      width: 100%;
+      /* background-color: red; */
+    }
+    .about-bg .trader-detail{
+        width: 100%;
+    }
+   .trader-detail .heading{
+        width: 100%;
+        padding: 0%;
+       
+    }
+    .trader-detail .heading .section-head{
+        width: 100%;
+       
+    }
+    .trader-detail .section-text{
+       height: 100%;
+       width: 100%;
+       margin-top: 30px;
+       line-height: 30px;
+    }
+
+    .trader-detail .value{
+        width: 100%;
+        /* background-color: red; */
+        display: flex;
+        justify-content:start;
+        gap: 20px;
+       
+
+        
+       
+       
+    }
+    .value li{
+        width: 350px;
+        /* background-color: firebrick; */
+    }
+
+    .certification{
+        width: 100%;
+        
+    }
+   
+    .row .certificate{
+        /* background-color: red; */
+        width: auto;
+    }
+    .arrow1{
+        display: none;
+    }
+   
+  
+  
+}
+
+
+
+
+
+
+
+@media (max-width:768px) {
+
+    .about{
+        width: 100%;
+
+    }
+    .about .about-dt{
+          padding: 120px 20px;
+    }
+     .about-page{
+        padding: 30px 0px;
+
+        
+        width: 100%;
+       
+     }
+
+    .about-page .about-bg{
+        height: auto;
+        
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0px;
+        padding: 0px 20px;
+
+     }
+
+    .about-bg .trader-detail{
+        height: auto;
+       
+       width: 100%;
+       
+
+    }
+    .trader-detail .heading{
+        width: 100%;
+       
+    }
+    .trader-detail .heading .section-head{
+        width: 100%;
+    }
+    .trader-detail .section-text{
+       height: auto;
+       width: 100%;
+       margin-top: 30px;
+       line-height: 30px;
+      
+      
+    }
+
+    .trader-detail .value{
+        width: 100%;
+        
+    }
+    .value li{
+        width: 45%;
+    }
+
+
+    .about-bg .trader-image{
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+       
+    }
+     .trader-image .trader1{
+    height: 500px;
+    width: 400px;
+   
+   
+
+   }
+    .trader-image .experience {
+        /* background-color: red; */
+        position: absolute;
+        bottom: 0%;
+        left: 32%;
+    }
+
+
+    .certification{
+        width: 100%;
+       
+     
+
+    }
+    .certification .row{
+        width: 100%;
+        display: flex;
+       
+        flex-wrap: wrap;
+        gap: 85px;
+        padding: 30px 0px;
+       
+       
+        
+    }
+  
+    .certificate .icon1{
+        width: 100%;
+    }
+
+    .mission-page{
+        width: 100%;
+        height: auto;
+    }
+    .mission-page .mission-vission{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .mission-vission .coach{
+        width: 100%;
+        /* height: 60%; */
+        padding: 20px ;
+        background-color: transparent;
+    }
+    .mission-vission .goal{
+        width: 100%;
+        padding: 20px;
+    }
+    .goal .text-section{
+        padding:  20px   0% ;
+        width: 100%;
+    }
+    .goal .mission{
+        margin-bottom: 40px;
+    }
+
+    .why-choose-us{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .why-choose-us .heading{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: start;
+        padding-left: 20px;
+    }
+    .why-choose-us .heading h2{
+        width: auto;
+    }
+    .option{
+        width: 100%;
+        flex-direction: column;
+        padding: 30px 20px;
+        /* background-color: red; */
+    }
+    .option .box{
+        width: 100%;
+        flex-direction: column;
+        
+    }
+
+     .modal-content .close {
+        position: absolute;
+        display: block;
+        right: 12px;
+        top: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        background-color: transparent;
+        color: black;
+    }
+    
+    
+}
+
+
+
+@media (max-width:451px) {
+  
+   
+
+    .about-page{
+        width: 100%;
+        height: auto;
+        padding: 0%;
+    }
+
+    .about-page .about-bg{
+        height: auto;
+        
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0px;
+        padding: 0px 20px;
+
+     }
+
+    .about-bg .trader-detail{
+        height: auto;
+       
+       width: 100%;
+       
+
+    }
+    .trader-detail .heading{
+        width: 100%;
+       
+    }
+    .trader-detail .heading .section-head{
+        width: 100%;
+    }
+    .trader-detail .section-text{
+       height: 100%;
+       width: 100%;
+       margin-top: 30px;
+       
+    }
+
+    .trader-detail .value{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        gap: 10px;
+
+        
+    }
+    .value li{
+        width: 100%;
+    }
+
+    
+
+    .about-bg .trader-image{
+        width: 100%;
+        height: auto;
+        position: relative;
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px 20px;
+        
+        
+       
+    }
+    .trader-image .trader1{
+        height: auto;
+        width: auto;
+       
+    }
+    .trader-image .trader2{
+        height: auto;
+        width: auto;
+        margin-left: 0%;
+         
+    }
+    
+   .trader-image .experience{
+   
+    position: absolute;
+      bottom: 2%;
+    left: 3%;
+    background-color: white;
+    
+   }
+   .experience .count{
+    color: white;
+   
+   }
+   .certification{
+    width: 100%;
+    padding: 0%;
+   }
+
+   .certification .row{
+    flex-direction: column;
+     gap: 30px;
+     align-items: center;
+     justify-content: center;
+   }
+   .row .certificate{
+    
+    height: auto;
+   
+
+   }
+   .arrow2{
+    display: none;
+   }
+   .certificate .icon1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+
+     .why-choose-us{
+        width: 100%;
+    }
+    .why-choose-us .heading{
+        /* background-color: red; */
+        padding: 0px 0px;
+        padding-left: 20px;
+        padding-top: 30px;
+    }
+
+    .heading .section-text{
+        width: 100%;
+        /* padding: 20px; */
+        padding-right: 20px;
+    }
+    .why-choose-us .option{
+        width: 100%;
+        
+    }
+    .option .box{
+       height: auto;
+       width: 100%; 
+       flex-direction: column;
+       padding: 30px 0px;
+     
+ 
+    }
+    .option .option-text{
+        width: 100%;
+    }
+  
+
+    
+}
+@media screen and (max-width: 450px) {
+
+  h1{
+    font-size: 26px !important;
+  }
+
+  h2{
+    width: 100%;
+    /* background-color: red; */
+    font-size: 30px !important;
+  }
+
+  p{
+    font-size: 16px !important;
+  }
+
+}
+
+
+
+
+.theme-btn.btn-style-one{
+  position: relative;
+  display: inline-flex;  
+  align-items: center;
+  padding: 14px 38px;
+  border-radius: 10px;
+  background: #7255e6;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.3s ease;
+}
+
+/* sliding overlay */
+.theme-btn.btn-style-one::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #5a3fd6;
+  transform: translateX(-100%);
+  transition: transform 0.4s ease;
+  z-index: 0;
+}
+
+.theme-btn.btn-style-one:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(114,85,230,0.45);
+}
+
+.theme-btn.btn-style-one:hover::before{
+  transform: translateX(0);
+}
+
+.theme-btn.btn-style-one .btn-title{
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.theme-btn.btn-style-one:hover .btn-title{
+  transform: translateX(6px);
+}
+
+
+
+
+
+
+
+

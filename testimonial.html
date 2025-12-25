@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Testimonial Modal</title>
+  <link rel="stylesheet" href="">
+</head>
+<style>
+  
+
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.modal-content {
+  background: #fff;
+  width: 350px;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+}
+
+
+.close {
+  position: absolute;
+  right: 12px;
+  top: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.modal-content h2 {
+  margin-bottom: 15px;
+  color: black;
+}
+
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+
+button[type="submit"] {
+  width: 100%;
+  background: #6c7bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background: #5664e0;
+}
+
+</style>
+<body>
+  
+
+<button  onclick="openModal()">click me </button>
+
+
+<div id="testimonialModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+
+    <h2>Add Your Testimonial</h2>
+
+    <form>
+      <input type="text" placeholder="Your Name" required>
+
+      <textarea placeholder="Your Message" rows="4" required></textarea>
+
+      <input type="file">
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+
+
+
+
+
+
+<script>
+    
+function closeModal() {
+  document.getElementById("testimonialModal").style.display = "none";
+}
+    function openModal() {
+  document.getElementById("testimonialModal").style.display = "flex";
+}
+
+
+</script>
+</body>
+</html>

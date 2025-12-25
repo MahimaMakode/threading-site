@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tradification Webinar Card</title>
+    <link rel="stylesheet" href="webinar.css">
+    <link rel="stylesheet" href="course.css">
+    <link rel="stylesheet" href="icon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+     
+
+<div id="preloader">
+  <img src="public/images/preloader.gif" alt="Loading..." />
+</div>
+       <div id="header-container"></div>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Webinar</h1>
+            <p><span>Home</span> > Webinar</p>
+        </div>
+    </section>
+
+    <section class="filter">
+        <button class="active" onclick="filterCourses('all',this)">All</button>
+        <button onclick="filterCourses('trading',this)">Trading</button>
+    </section>
+
+    <section class="courses">
+        <div class="card trading">
+
+            <div class="course-card">
+                <div class="thumb">
+                    <img src="public/images/home-img.png"
+                        alt="Zero to Pro Trader" />
+
+                    <div class="price-box">
+                        <span class="old">₹5000</span>
+                        <span class="new">₹2000</span>
+                    </div>
+
+                    <span class="level">BEGINNER</span>
+                </div>
+
+                <div class="content">
+                    <div class="info">
+                        <span><i class="fa-solid fa-book"></i> 8 Lessons</span>
+                        <span><i class="fa-solid fa-user-group"></i> 0 Students</span>
+                        <span><i class="fa-regular fa-clock"></i> 2 Hours</span>
+                    </div>
+                    <h3>Zero to Pro Trader</h3>
+                </div>
+            </div>
+
+            <!-- <h1>hello</h1> -->
+        </div>
+
+        <div class="card trading">
+            <!-- <h2>trading</h2> -->
+        </div>
+
+        <div class="card other">
+
+        </div>
+    </section>
+
+      <section id="footer"></section>
+
+      
+      <div class="floating-icons">
+
+  <a href="https://wa.me/916268491275" target="_blank" class="whatsapp-btn">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+
+  <button id="scrollTopBtn" class="scroll-top-btn">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+</div>
+<script src="script.js"></script>
+   <script>
+    //  fetch("header.html").then(r=>r.text()).then(d=>{
+    // document.getElementById("header").innerHTML=d;
+    // });
+    fetch("footer.html").then(r => r.text()).then(d => {
+            document.getElementById("footer").innerHTML = d;
+        });
+      function goLogin(){
+      location.assign("login.html");
+}
+
+    function filterCourses(type, btn) {
+        // active button
+        document.querySelectorAll('.filter button')
+            .forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const cards = document.querySelectorAll('.card');
+
+        // first hide all with animation
+        cards.forEach(card => {
+            card.classList.add('hide');
+            card.classList.remove('show');
+        });
+
+        // after animation, apply filter
+        setTimeout(() => {
+            cards.forEach(card => {
+                if (type === 'all' || card.classList.contains(type)) {
+                    card.style.display = 'block';
+                    card.classList.remove('hide');
+                    card.classList.add('show');
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }, 300); // animation delay
+    }
+          function openMenu(){
+  document.querySelector('.mobile-menu')?.classList.add('show');
+  document.querySelector('.overlay')?.classList.add('show');
+}
+
+   function closeMenu(){
+       document.querySelector('.mobile-menu')?.classList.remove('show');
+       document.querySelector('.overlay')?.classList.remove('show');
+}
+
+</script>
+
+
+
+
+</body>
+
+</html>

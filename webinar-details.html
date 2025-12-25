@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webinar-details-page</title>
+    <link rel="stylesheet" href="webinar-details.css">
+    <link rel="stylesheet" href="icon.css">
+     <link rel="stylesheet"
+ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  
+<div id="preloader">
+  <img src="public/images/preloader.gif" alt="Loading..." />
+</div>
+    
+     <section id="header-container"></section>
+
+
+       <section class="about">
+           <div class="about-dt">
+             <div class="about-detail">
+                <h1>Webinar Details</h1>
+                <ul>
+                    <li><a href="index.html" class="home">home</a></li>
+                    <li><a href="">></a></li>
+                    <li><a href="">For Investor</a></li>
+                </ul>
+            </div>
+           </div>
+
+        </section>
+
+
+        <section class="webinar-details">
+            <div class="webinar-detail-content">
+                <div class="content1">
+                   <ul class="div">
+                    <li>
+                        <span class="info-icon black"><i class="far fa-clock"></i></span>
+                         <h6 class="info">Duration:</h6>  
+                        <h6 class="info-detail">2 hours</h6>  
+                    </li>
+                     <li>
+                        <span class="info-icon green"><i class="far fa-user-circle"></i></span>
+                         <h6 class="info">Students Enrolled:</h6>  
+                        <h6 class="info-detail">10</h6>  
+                    </li>
+                     <li>
+                        <span class="info-icon violet" ><i class="far fa-bell"></i></span>
+                         <h4 class="info">Date:</h4>  
+                        <h5 class="info-detail">2025-09-13</h5>  
+                    </li>
+                     <li>
+                        <span class="info-icon"><i class="far fa-clock"></i>
+									</span>
+                         <h4 class="info">Time:</h4>  
+                        <h5 class="info-detail">18:00:00</h5>  
+                    </li>
+                   </ul>
+
+
+                   <div class="webinar-price-details">
+                    <h4 class="info">Webinar Price</h4>
+                    <h2 class="og-price">₹5000.00</h2>
+                    <h4 class="discount">₹2000.00</h4>
+
+                    <button class="buy-btn" disabled><p>Buy This Webinar</p></button>
+                   </div>
+
+
+                </div>
+                <div class="content2">
+                    <div class="pro-trader-img">
+                        <img src="public/images/home-img.png" alt="">
+                    </div>
+
+                    <div class="enrollment">
+                        <div class="enrollment-closed">
+                            <h3>Enrollment is now closed</h3>
+                        </div>
+
+                        <p class="para">Trial Video</p>
+
+                        <a href="">
+                            <button class="trial">🎥Watch trial video</button>
+                        </a>
+                    </div>
+
+                    <div class="paragraph ">
+                        <h2>Zero to Pro Trader</h2>
+                        <p class="para">Course Overview: This course is designed for anyone who wants to take the stock market seriously – whether you are a complete beginner or someone with basic experience.</p><br>
+                        <p class="para">What You’ll Get in This Course: Stock Market Basics to Advanced Concepts – build a strong foundation. Intraday & Swing Trading Strategies – proven methods used by professionals. Risk Management Framework – learn how to protect your capital while maximizing opportunities. Trading Psychology Mastery – control emotions, build discipline, and trade with confidence. Exclusive Bonuses worth ₹10,000+ – including PDF guides, live doubt-clearing sessions, and mentorship support. 💰 Real Value vs Limited-Time Offer: The complete package is worth ₹25,000+, but for a limited time, you can enroll today for just ₹2,000. ⚡ Why Enroll? Because success in trading doesn’t come from luck – it comes from the right knowledge, the right mindset, and the right system. This course combines all three to give you a powerful edge in the market. 👉 Don’t wait. Take action now and start your journey toward becoming a confident and profitable trader.</p>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <div class="comment-section">
+               <div class="heading-detail">
+                 <h2>Comments</h2>
+                <p class="para">No comments yet.</p>
+               </div>
+
+               <div class="form-page">
+                <h2>Leave a Comment</h2>
+
+                     <form class="comment-form">
+    <div class="form-row">
+      <input type="text" placeholder="Enter Name" required>
+      <input type="email" placeholder="Enter Email" required>
+    </div>
+
+    <div class="form-group">
+      <label>Profile Picture</label>
+      <input type="file">
+    </div>
+
+    <div class="form-group">
+      <textarea placeholder="Enter Message" rows="5" required></textarea>
+    </div>
+
+    <button type="submit">SUBMIT COMMENT</button>
+  </form>
+                 
+               </div>
+            </div>
+
+        </section>
+
+
+<section id="footer"></section>
+
+      <div class="floating-icons">
+
+  <a href="https://wa.me/916268491275" target="_blank" class="whatsapp-btn">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+
+  <button id="scrollTopBtn" class="scroll-top-btn">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+</div>
+
+      
+           <script src="script.js"></script>
+
+     <script>
+
+     
+             fetch("header.html").then(r=>r.text()).then(d=>{
+    document.getElementById("header").innerHTML=data;
+    });
+
+    fetch("header.html")
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById("header-container").innerHTML = data;
+
+    setTimeout(setHeaderSpace, 50);
+  });
+
+    fetch("footer.html").then(r => r.text()).then(d => {
+            document.getElementById("footer").innerHTML = d;
+        });
+
+function setHeaderSpace(){
+  const header = document.querySelector("#header");
+  const page = document.querySelector("#page-content");
+
+  if(header && page){
+    page.style.marginTop = header.offsetHeight + "px";
+  }
+}
+
+window.addEventListener("resize", setHeaderSpace);
+
+
+       
+      function goLogin(){
+      location.assign("login.html");
+}
+
+         
+      function openMenu(){
+  document.querySelector('.mobile-menu')?.classList.add('show');
+  document.querySelector('.overlay')?.classList.add('show');
+}
+
+   function closeMenu(){
+       document.querySelector('.mobile-menu')?.classList.remove('show');
+       document.querySelector('.overlay')?.classList.remove('show');
+}
+     </script>
+</body>
+</html>

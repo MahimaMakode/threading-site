@@ -1,0 +1,783 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.about{
+    height: auto;
+    width: 100%;
+    background: url(public/images/page-title.jpg),no-repeat;
+    
+    
+}
+.about .about-dt{
+    padding: 120px 150px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.626);
+   
+}
+.about .about-detail{
+    width: 100%;
+    
+}
+
+.about .about-detail h1{
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1em;
+    color: white;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+
+.about .about-detail ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.about .about-detail ul li  .home{
+    color: #04B388;
+}
+
+.trade-advantage{
+    height: auto;
+    width: 100%;
+    padding: 20px 150px;
+    
+
+}
+.trade-advantage .title{
+    width: 100%;
+    padding: 20px 0px 0px 0px;
+}
+.trade-advantage .title h4{
+     font-size: 16px;
+     font-weight: 700;
+    color: #04b388;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.trade-advantage .adv{
+    width: 90%;
+
+}
+.adv  h1{
+    font-size: 50px;
+    font-weight: 700;
+    color: #191e24;
+    line-height: 1.2em;
+
+}
+
+.adv ul{
+    list-style-type: none;
+} 
+.adv ul li p{
+     color: #7d8185;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: justify;
+    margin: 35px 0px;
+}
+
+.about-page{
+    height:auto;
+    width: 100%;
+    background: url(public/images/icon-dotted-map.png);
+    background-repeat: no-repeat;
+    background-position: 25%;
+    padding: 30px;
+}
+
+.about-page .about-bg{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content:space-between;
+    /* background-color: red; */
+   
+
+}
+.about-bg .trader-image{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+     margin-top: 40px;
+   
+  
+   
+   
+
+}
+.trader-image .trader1{
+    height: 560px;
+    width: 470px;
+
+   
+
+}
+.trader1  img{
+    height: 100%;
+    width: 100%;
+}
+
+
+.trader-image .trader2{
+    height: 370px;
+    width: 300px;
+    border-radius: 20px;
+    margin-left: -40px;
+    
+}
+.trader2 img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+.trader-image .arrow1{
+    height: 300px;
+    width: 100px;
+   
+     position: absolute;
+    /* top: 420px; */
+    bottom: -10%;
+    left: 0%;
+    z-index: -999;
+
+
+}
+.trader-image .arrow2{
+    height: 300px;
+    width: 100px;
+   
+   position: absolute;
+    /* top: 420px; */
+    bottom: -10%;
+    right: 25%;
+    z-index: -99;
+
+}
+
+
+.about-bg .trader-detail{
+    height: auto;
+    width: 45%;
+    padding-bottom: 50px;
+}
+.trader-detail .heading{
+    height:auto;
+    width: 100%;
+  
+    padding: 90px 40px 20px 0px ;
+
+   
+}
+.heading h4{
+    font-size: 16px;
+    font-weight: 700;
+    color: #04b388;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.trader-detail .heading h2{
+    font-size: 50px;
+    font-weight: 700;
+    color: #191e24;
+    line-height: 1.2em;
+    width: 70%;
+
+}
+.trader-detail .section-text{
+    height: 100%;
+    width:100%;
+    /* margin-top: 30px; */
+    
+}
+
+.section-text p{
+    color: #7d8185;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    
+}
+
+.trader-detail .value{
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    /* background-color: green; */
+    padding-right: 70px;
+   
+   
+
+}
+.value .value-detail{
+    height: 80px;
+    width: 100%;
+    /* background-color: red; */
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+   
+
+}
+.value li i{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    padding: 15px;
+    font-weight: 900;
+    margin-right: 10px;
+    
+}
+.value .third{
+    background-color: #EF5C72;
+}
+.value .second{
+    background-color: #04b388;
+}
+.value .first{
+    background-color: #7054E6;
+}
+.value i{
+    font-weight: 900;
+    color: white;
+}
+
+
+
+
+.why-choose-us{
+    height: auto;
+    width: 100%;
+    background-image: url(public/images/icon-dotted-map-2.png);
+    background-repeat: initial;
+    background-position: top;
+    background-size: contain;
+    padding-bottom: 100px;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.why-choose-us .heading{
+    height: auto;
+    width: 100%;
+
+   
+
+ 
+   
+}
+
+.why-choose-us .heading .section-head{
+    height: 100%;
+    width: 90%;
+   
+    /* background-color: red; */
+}
+
+.section-head h4{
+    font-size: 16px;
+    font-weight: 700;
+    color: #04b388;
+   
+    margin-bottom: 20px;
+}
+.section-head h2{
+    font-size: 50px;
+    font-weight: 700;
+    color: #191e24;
+    line-height: 1.2em;
+}
+
+
+
+.why-choose-us .option{
+    height:auto;
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap: 30px;
+       
+
+    
+    
+}
+
+
+
+.option .container{
+    height: 13rem;
+    
+    width: 34rem;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+     box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+   
+
+}
+
+
+.container:hover {
+  transform: translateY(-6px);
+}
+
+.container .image-box img{
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    transition: border-radius .5s ease-in-out;
+
+
+}
+
+.image-box img:hover {
+    border-radius: 0px 65px 0px 65px;
+    
+    
+    
+    
+}
+
+.image-box img{
+    height: 100%;
+    width: 100%;
+    border-radius: 5cm;
+}
+
+.container .option-text{
+    height: 100%;
+    width: 60%;
+   /* background-color: red; */
+   padding: 30px 20px;
+   background: url(public/images/icon-event.png);
+    background-position: right;
+   background-repeat: no-repeat;
+  
+    
+}
+
+.option-text a{
+    text-decoration: none;
+    color: #191e24;
+    font-size: 20px;
+    font-weight: 700;
+  
+}
+
+.option-text a:hover{
+    color: #04b388;
+}
+
+.option-text p{
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+    line-height: 30px;
+    padding: 10px 35px 0px 0px;
+   
+    
+}
+
+
+.detail{
+    height: auto;
+    width: 100%;
+    padding: 40px 150px 70px;
+}
+.detail .adv{
+     width: 90%;
+
+}
+
+
+
+
+
+
+
+
+
+/* //responsive  */
+
+@media (max-width:991px) {
+
+    .about{
+        width: 100%;
+        height: auto;
+    }
+    .about .about-dt{
+        padding-left: 30px;
+        margin: 0%;
+    }
+     .about .about-dt h1 {
+        font-size: 30px
+    }
+    .trade-advantage{
+        width: 100%;
+        padding: 20px 40px;
+    }
+    .why-choose-us{
+        width: auto;
+        max-width: 100%;
+       
+    }
+   
+    .why-choose-us .section-head{
+        padding-left: 0%;
+      
+        width: 100%;
+        /* background-color: red; */
+    }
+     .about-page{
+ 
+        width: 100%;
+        /* background-color: red; */
+
+    }
+    .about-bg{
+        width: 100%;
+        
+        display: flex;
+        flex-direction: column-reverse;
+        
+       
+    }
+    .about-bg  .trader-image{
+
+      display: flex;
+      width: 100%;
+      /* background-color: red; */
+    }
+    .about-bg .trader-detail{
+        width: 100%;
+    }
+   .trader-detail .heading{
+        width: 100%;
+        padding: 0%;
+       
+    }
+    .trader-detail .heading .section-head{
+        width: 100%;
+       
+    }
+    .trader-detail .section-text{
+       height: 100%;
+       width: 100%;
+       margin-top: 30px;
+       line-height: 30px;
+    }
+
+    .trader-detail .value{
+        width: 100%;
+        /* background-color: red; */
+        display: flex;
+        justify-content:start;
+        gap: 20px;
+       
+
+        
+       
+       
+    }
+    .value li{
+        width: 350px;
+        /* background-color: firebrick; */
+    }
+     .detail{
+        width: 100%;
+        padding: 20px 40px;
+    }
+
+
+   
+  
+  
+}
+
+@media (max-width:768px) {
+
+    .heading h2{
+        font-size: 40px;
+        width: 100%;
+    }
+    .adv h1{
+        font-size: 40px;
+    }
+    .about{
+        width: 100%;
+
+
+    }
+    .about .about-dt{
+        width: 100%;
+        padding: 120px 20px;
+        
+    }
+   
+     .about-page{
+        
+        
+        width: 100%;
+        padding-bottom: 800px;
+       
+     }
+
+    .about-page .about-bg{
+        height: auto;
+        
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0px;
+        padding: 0px 20px;
+
+     }
+
+    .about-bg .trader-detail{
+        height: auto;
+       
+       width: 100%;
+      
+       
+
+    }
+    .trader-detail .heading{
+        width: 100%;
+        padding: 0%;
+       
+    }
+    
+    .trader-detail .heading h2{
+        width: 100%;
+    }
+    .trader-detail .heading .section-head{
+        width: 100%;
+    }
+    .trader-detail .section-text{
+       height: auto;
+       width: 100%;
+       margin-top: 30px;
+       line-height: 30px;
+       margin-bottom: 30px;
+      
+      
+    }
+
+
+    .trader-detail .value{
+        width: 100%;
+        
+    }
+    .value li{
+        width: 100%;
+    }
+
+   
+
+    .about-bg .trader-image{
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding:0;
+        margin: 0%;
+       
+    }
+
+    
+ 
+
+    .why-choose-us{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+
+    }
+    .why-choose-us .heading{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: start;
+        padding-left: 20px;
+    }
+    .why-choose-us .heading h2{
+        width: 100%;
+    }
+    .option{
+        width:100%;
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+         padding: 0px 20px;
+        
+     
+        
+       
+       
+        
+    }
+    .option .container{
+        width: auto;
+        
+        
+    }
+
+    .trade-advantage{
+        width: 100%;
+        padding: 20px 20px;
+    }
+
+    .detail{
+        width: 100%;
+        padding: 20px 20px;
+    }
+   
+    
+}
+
+
+@media (max-width:451px) {
+
+    .about-page{
+        width: 100%;
+       
+        padding: 0%;
+        height: auto;
+    }
+
+    .about-page .about-bg{
+        height: 100%;
+        
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0px;
+        padding: 0px 20px;
+
+     }
+
+    .about-bg .trader-detail{
+        height: auto;
+       
+       width: 100%;
+       /* padding-top: 20px; */
+       
+       
+
+    }
+    .trader-detail .heading{
+        width: 100%;
+       
+    }
+    .trader-detail .heading .section-head{
+        width: 100%;
+    }
+    .trader-detail .section-text{
+       height: 100%;
+       width: 100%;
+       margin-top: 30px;
+       
+    }
+
+    .trader-detail .value{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        gap: 10px;
+
+        
+    }
+    .value li{
+        width: 100%;
+    }
+
+    
+    
+
+    .about-bg .trader-image{
+         width: 100%;
+        height: auto;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px 20px;
+       
+        
+       
+    }
+    .trader-image .trader1{
+       
+         height: auto;
+         width: auto;
+     
+       
+        
+    }
+    .trader-image .trader2{
+        
+        width:auto;
+        height: auto;
+         margin-left: 0%;
+        
+        
+       
+    }
+    .trader-image .arrow1{
+        display: none;
+
+    }
+    .trader-image .arrow2{
+        display: none;
+    }
+
+    
+
+     .why-choose-us{
+        width: 100%;
+    }
+    .why-choose-us .option{
+        height: auto;
+        width: 100%;
+        flex-direction: column;
+        padding: 0px 20px;
+    }
+    .option .container{
+       height: auto;
+       /* width: 100%;  */
+       display: flex;
+       
+    }
+    
+}
+
