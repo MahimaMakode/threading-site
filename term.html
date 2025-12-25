@@ -11,11 +11,11 @@
 
 <body>
 
-<div id="preloader">
-  <img src="public/images/preloader.gif" alt="Loading..." />
-</div>
+    <div id="preloader">
+        <img src="public/images/preloader.gif" alt="Loading..." />
+    </div>
 
-   <div id="header-container"></div>
+    <section id="header-container"></section>
 
     <section class="privacy-hero">
         <div class="container">
@@ -25,7 +25,8 @@
     </section>
 
     <section class="privacy-content container">
-        <p>Welcome to The Tradification. By accessing or using our website, courses, webinars, and other services, you agree to the following Terms and Conditions.</p>
+        <p>Welcome to The Tradification. By accessing or using our website, courses, webinars, and other services, you
+            agree to the following Terms and Conditions.</p>
 
         <h3>1. Use of Our Services</h3>
         <ul>
@@ -41,7 +42,8 @@
 
         <h3>3. Intellectual Property</h3>
         <ul>
-            <li>All content on this website including courses, graphics, and branding is the property of The Tradification and protected by copyright.</li>
+            <li>All content on this website including courses, graphics, and branding is the property of The
+                Tradification and protected by copyright.</li>
             <li>You may not copy, reproduce, distribute, or resell any content without written permission.</li>
         </ul>
 
@@ -52,13 +54,15 @@
         </ul>
 
         <h3>5. Limitation of Liability</h3>
-        <p>We are not liable for any trading loss or financial decision made based on our content. Our content is for educational purposes only and should not be considered financial advice.</p>
+        <p>We are not liable for any trading loss or financial decision made based on our content. Our content is for
+            educational purposes only and should not be considered financial advice.</p>
 
         <h3>6. Modifications</h3>
         <p>The Tradification reserves the right to modify or update these terms at any time.</p>
 
         <h3>7. Termination</h3>
-        <p>We reserve the right to suspend or terminate access if you violate any terms or engage in fraudulent activity.</p>
+        <p>We reserve the right to suspend or terminate access if you violate any terms or engage in fraudulent
+            activity.</p>
 
         <h3>Contact Us</h3>
         <p>If you have any questions, feel free to contact us:</p>
@@ -67,46 +71,45 @@
         <p><strong>Address:</strong> 403, SS ENCLAVE UMARIYA, MHOW</p>
     </section>
 
-      <section id="footer"></section>
+    <section id="footer"></section>
 
-      <div class="floating-icons">
+    <div class="floating-icons">
 
-  <a href="https://wa.me/916268491275" target="_blank" class="whatsapp-btn">
-    <i class="fa-brands fa-whatsapp"></i>
-  </a>
+        <a href="https://wa.me/916268491275" target="_blank" class="whatsapp-btn">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
 
 
-  <button id="scrollTopBtn" class="scroll-top-btn">
-    <i class="fa-solid fa-arrow-up"></i>
-  </button>
-</div>
+        <button id="scrollTopBtn" class="scroll-top-btn">
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
+    </div>
 
-<script src="script.js"></script>
-      <script>
-         fetch("header.html").then(r=>r.text()).then(d=>{
-    document.getElementById("header").innerHTML=d;
-    });
-        fetch("footer.html").then(r=>r.text()).then(d=>{
-    document.getElementById("footer").innerHTML=d;
-    });
-      function goLogin(){
-      location.assign("login.html");
+    <script src="script.js"></script>
+    <script>
 
-            function openMenu(){
-  document.querySelector('.mobile-menu')?.classList.add('show');
-  document.querySelector('.overlay')?.classList.add('show');
-}
+        fetch("footer.html").then(r => r.text()).then(d => {
+            document.getElementById("footer").innerHTML = d;
+        });
+        function goLogin() {
+            location.assign("login.html");
+        }
 
-   function closeMenu(){
-       document.querySelector('.mobile-menu')?.classList.remove('show');
-       document.querySelector('.overlay')?.classList.remove('show');
-}
+            function openMenu() {
+                document.querySelector('.mobile-menu')?.classList.add('show');
+                document.querySelector('.overlay')?.classList.add('show');
+            }
 
-}
+            function closeMenu() {
+                document.querySelector('.mobile-menu')?.classList.remove('show');
+                document.querySelector('.overlay')?.classList.remove('show');
+            }
 
-      </script>
+        
 
-   
+    </script>
+
+
 
 </body>
 
