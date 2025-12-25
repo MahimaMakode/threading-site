@@ -1579,6 +1579,9 @@ input, textarea {
 .text-p{
     padding-top: 5px;
 }
+.option-text p {
+    padding: 0;
+}
 }
 
 
